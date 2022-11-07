@@ -49,12 +49,9 @@ class Solution {
             nextFields = getNextFields(nextFields[0], nextFields[1]);
             System.out.println(nextFields[0] + " " + nextFields[1]);
         }
-        if ((checkValid(board, x, y)) || (nextFields[0] >= 8 && nextFields[1] >= 8)){
+ 
         return fullfillSudoku(board, nextFields[0], nextFields[1]);
-        }
-        else return false;
-        }
-    }
+    }}
     public boolean isValidSudoku(char[][] board) {
         return fullfillSudoku(board, 0, 0);
     }
