@@ -11,7 +11,6 @@ class Solution {
             s += arr[i].trim() + " ";
             i--;
         }
-        System.out.println("line:" + arr[0]);
         if(arr[0].length() == 0) return s.substring(0, s.length()-1);
         s += arr[0];
         return s;
