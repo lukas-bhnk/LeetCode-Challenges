@@ -1,6 +1,6 @@
 class Solution {
     public int reverse(int x) {
-        
+
         if (x < 0) {
             String s = reverse(-x, "");
             try {
