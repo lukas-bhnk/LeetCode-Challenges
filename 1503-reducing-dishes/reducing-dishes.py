@@ -1,7 +1,7 @@
 class Solution:
     def maxSatisfaction(self, satisfaction: List[int]) -> int:
         satisfaction.sort()
-        if 0 == satisfaction[len(satisfaction) - 1]:
+        if 0 >= satisfaction[len(satisfaction) - 1]:
             return 0
         curMax = 0
         curSumPlus = 0
