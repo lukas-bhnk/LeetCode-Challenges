@@ -1,6 +1,6 @@
 class Solution:
     def maxSatisfaction(self, satisfaction: List[int]) -> int:
-        sortedList = satisfaction.sort()
+        satisfaction.sort()
         if 0 == satisfaction[len(satisfaction) - 1]:
             return 0
         curMax = 0
