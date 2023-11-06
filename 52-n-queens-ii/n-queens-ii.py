@@ -7,21 +7,15 @@ class Solution:
     def check(self, field, curQueenX, curQueenY):
         for i in range(1, len(field)):
             if field[curQueenX][(curQueenY + i) % len(field)] == "1":
-                print("a")
                 return False
             if field[(curQueenX + i) % len(field)][curQueenY] == "1":
-                print("b")
                 return False
         for i in range(1, len(field)):
-            print(curQueenX - i, curQueenY - i)
-            print(curQueenX - i, curQueenY + i)
             if curQueenX - i >= 0 and curQueenY - i >= 0:
                 if field[curQueenX - i][curQueenY - i] == "1":
-                    print("c")
                     return False
             if curQueenX - i >= 0 and curQueenY + i < len(field):
                 if field[curQueenX - i][curQueenY + i] == "1":
-                    print("d")
                     return False
             if curQueenX - i < 0 and curQueenY - i < 0 and curQueenY + i >= len(field):
                 return True
